@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6A2PY8dXYaw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marko\\OneDrive\\Desktop\\ihcux-racha-ai-blazor\\ihcux-racha-ai-blazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marko\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.7\\microsoft.aspnetcore.app.internal.assets.10.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

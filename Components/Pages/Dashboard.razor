@@ -1,0 +1,55 @@
+@page "/dashboard"
+@using ihcux_racha_ai_blazor.Models
+
+<h2>Olá, Daniel! 👋</h2>
+
+<div class="d-flex justify-content-end mb-3">
+    <button class="btn btn-primary">Novo Gasto</button>
+</div>
+
+<!-- Cards de resumo -->
+<div class="row mb-4">
+    <div class="col">
+        <div class="card p-3">
+            <small>Saldo Geral</small>
+            <strong class="text-primary">R$ 798,60</strong>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card p-3">
+            <small>A Receber</small>
+            <strong class="text-success">R$ 1.285,00</strong>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card p-3">
+            <small>A Pagar</small>
+            <strong class="text-danger">R$ 486,40</strong>
+        </div>
+    </div>
+</div>
+
+<!-- Lista de grupos -->
+<h5>SEUS GRUPOS ATIVOS</h5>
+
+@if (grupos.Count == 0)
+{
+    <p>Você ainda não participa de nenhum grupo. Que tal criar um?</p>
+}
+else
+{
+    @foreach (var grupo in grupos)
+    {
+        <GrupoCard Grupo="grupo" />
+    }
+}
+
+@code {
+    List<Grupo> grupos = new()
+    {
+        new Grupo { Nome = "República Central", Categoria = "Casa", ValorPendente = 450.50m, NoVermelho = true },
+        new Grupo { Nome = "Churrasco de Domingo", Categoria = "Lazer", ValorPendente = 85.00m, NoVermelho = false },
+        new Grupo { Nome = "Viagem Floripa", Categoria = "Viagem", ValorPendente = 1200.00m, NoVermelho = false },
+        new Grupo { Nome = "Netflix & Internet", Categoria = "Contas", ValorPendente = 35.90m, NoVermelho = true }
+    };
+}

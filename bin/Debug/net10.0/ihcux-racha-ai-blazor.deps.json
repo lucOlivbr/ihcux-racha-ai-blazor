@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "ihcux-racha-ai-blazor/1.0.0": {
+        "runtime": {
+          "ihcux-racha-ai-blazor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ihcux-racha-ai-blazor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
